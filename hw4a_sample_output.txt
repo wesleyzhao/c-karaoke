@@ -1,0 +1,437 @@
+./hw4a singers.txt events.txt
+Singer is         Charlie, with 27 songs.
+	 song # 0 is                           99_Luftballons
+	 song # 1 is                        A_Day_in_the_Life
+	 song # 2 is                            Baby_Got_Back
+	 song # 3 is                  Baby_I_Need_Your_Loving
+	 song # 4 is               Bridge_over_Troubled_Water
+	 song # 5 is                                 Carry_On
+	 song # 6 is                              Don't_Speak
+	 song # 7 is                         Grease_Lightning
+	 song # 8 is                  I_Dig_Rock_&_Roll_Music
+	 song # 9 is                  I_Knew_You_Were_Trouble
+	 song #10 is                                     Mine
+	 song #11 is                            Mrs._Robinson
+	 song #12 is             Music_Sounds_Better_with_You
+	 song #13 is                                      One
+	 song #14 is                            One_More_Time
+	 song #15 is                          One_Tin_Soldier
+	 song #16 is                                Our_House
+	 song #17 is                       Rhythm_of_the_Rain
+	 song #18 is                                   Royals
+	 song #19 is                              Stand_by_Me
+	 song #20 is                      Sweet_Child_o'_Mine
+	 song #21 is                                  The_Fox
+	 song #22 is                              The_Message
+	 song #23 is                         To_Sir_With_Love
+	 song #24 is                            Under_the_Sea
+	 song #25 is                         Whole_Lotta_Love
+	 song #26 is                                Yesterday
+Singer is        Danielle, with 45 songs.
+	 song # 0 is                Another_Brick_in_the_Wall
+	 song # 1 is                  Baby_I_Need_Your_Loving
+	 song # 2 is                              Begin_Again
+	 song # 3 is                  Carry_On_My_Wayward_Son
+	 song # 4 is                            Come_Together
+	 song # 5 is                           Counting_Stars
+	 song # 6 is                            Crazy_In_Love
+	 song # 7 is                                    Creep
+	 song # 8 is                            Enter_Sandman
+	 song # 9 is                             For_an_Angel
+	 song #10 is                                Free_Bird
+	 song #11 is                            Gangnam_Style
+	 song #12 is                       Georgia_on_My_Mind
+	 song #13 is                          Good_Vibrations
+	 song #14 is                      Hooked_On_A_Feeling
+	 song #15 is                      I_Believe_I_Can_Fly
+	 song #16 is                       I_Want_It_That_Way
+	 song #17 is                            In_the_Ghetto
+	 song #18 is                                     Iris
+	 song #19 is                                   Ironic
+	 song #20 is                               Let_Her_Go
+	 song #21 is                                Long_Live
+	 song #22 is                            Lose_Yourself
+	 song #23 is                       Losing_My_Religion
+	 song #24 is                            Never_My_Love
+	 song #25 is                                Our_House
+	 song #26 is                                     Ours
+	 song #27 is                             Paper_Planes
+	 song #28 is                               Penny_Lane
+	 song #29 is                    Pour_Some_Sugar_on_Me
+	 song #30 is                              Radioactive
+	 song #31 is                    Right_Here,_Right_Now
+	 song #32 is                                     Roar
+	 song #33 is                        Song_Of_The_South
+	 song #34 is                      Take_My_Breath_Away
+	 song #35 is                               The_Breaks
+	 song #36 is                                  The_Fox
+	 song #37 is                              The_Message
+	 song #38 is                          The_Story_of_Us
+	 song #39 is                    Today_Was_a_Fairytale
+	 song #40 is                              Wagon_Wheel
+	 song #41 is                               Waterfalls
+	 song #42 is  We_Are_Never_Ever_Getting_Back_Together
+	 song #43 is                          White_Christmas
+	 song #44 is                    Wind_Beneath_My_Wings
+Singer is          Laurel, with 18 songs.
+	 song # 0 is                         Back_to_December
+	 song # 1 is                              Begin_Again
+	 song # 2 is                                  Crazier
+	 song # 3 is                                Eyes_Open
+	 song # 4 is                                 Fearless
+	 song # 5 is                                  Fifteen
+	 song # 6 is                  I_Knew_You_Were_Trouble
+	 song # 7 is               I'll_Make_a_Man_out_of_You
+	 song # 8 is                                Long_Live
+	 song # 9 is                               Love_Story
+	 song #10 is                                     Mean
+	 song #11 is                                     Mine
+	 song #12 is                                     Ours
+	 song #13 is                             Safe_&_Sound
+	 song #14 is                               Sparks_Fly
+	 song #15 is                    Today_Was_a_Fairytale
+	 song #16 is  We_Are_Never_Ever_Getting_Back_Together
+	 song #17 is                       You_Belong_with_Me
+Singer is            Sean, with 71 songs.
+	 song # 0 is         (Sittin'_On)_The_Dock_of_the_Bay
+	 song # 1 is                           99_Luftballons
+	 song # 2 is                            Ace_of_Spades
+	 song # 3 is          All_I_Want_For_Christmas_Is_You
+	 song # 4 is                                 Applause
+	 song # 5 is                            Back_in_Black
+	 song # 6 is                         Back_to_December
+	 song # 7 is                            Beautiful_Day
+	 song # 8 is                        Bohemian_Rhapsody
+	 song # 9 is                              Born_to_Run
+	 song #10 is               Bridge_over_Troubled_Water
+	 song #11 is                       Candle_In_The_Wind
+	 song #12 is                          Dock_Of_The_Bay
+	 song #13 is                                 Fearless
+	 song #14 is                                  Fifteen
+	 song #15 is                                Free_Bird
+	 song #16 is                        Genie_In_A_Bottle
+	 song #17 is                                Get_Lucky
+	 song #18 is                      Great_Balls_Of_Fire
+	 song #19 is              He_Stopped_Loving_Her_Today
+	 song #20 is                                  Hey_Ya!
+	 song #21 is                     Hungry_Like_the_Wolf
+	 song #22 is                  I_Dig_Rock_&_Roll_Music
+	 song #23 is                           I_Got_You_Babe
+	 song #24 is                  I_Knew_You_Were_Trouble
+	 song #25 is                                I_Love_It
+	 song #26 is                I_Saw_Mommy_Kissing_Santa
+	 song #27 is               I'll_Make_a_Man_out_of_You
+	 song #28 is                                  Imagine
+	 song #29 is                         It's_Raining_Men
+	 song #30 is                                    Layla
+	 song #31 is                      Let's_Stay_Together
+	 song #32 is                     Livin_'_La_Vida_Loca
+	 song #33 is                       Livin'_on_a_Prayer
+	 song #34 is                                     Lucy
+	 song #35 is                                     Maps
+	 song #36 is                              Mr._Sandman
+	 song #37 is             Music_Sounds_Better_with_You
+	 song #38 is                               My_Name_Is
+	 song #39 is                     Nothing_Compares_2_U
+	 song #40 is                                 Paranoid
+	 song #41 is                              Purple_Haze
+	 song #42 is                            Que_Sera_Sera
+	 song #43 is                                  Respect
+	 song #44 is                             Ring_of_Fire
+	 song #45 is                                   Royals
+	 song #46 is                             Safe_&_Sound
+	 song #47 is                        Seven_Nation_Army
+	 song #48 is                   Some_Kind_Of_Wonderful
+	 song #49 is                               Some_Night
+	 song #50 is                       Stairway_to_Heaven
+	 song #51 is                        Strawberry_Fields
+	 song #52 is                         Sultans_of_Swing
+	 song #53 is                             Superstition
+	 song #54 is                       Sweet_Home_Alabama
+	 song #55 is                      Teach_Your_Children
+	 song #56 is                              Teen_Spirit
+	 song #57 is                   This_Land_Is_Your_Land
+	 song #58 is                      Tie_A_Yellow_Ribbon
+	 song #59 is                      Under_The_Boardwalk
+	 song #60 is                     We_Are_the_Champions
+	 song #61 is                    Welcome_to_the_Jungle
+	 song #62 is                             What'd_I_Say
+	 song #63 is                              White_Horse
+	 song #64 is       With_A_Little_Help_From_My_Friends
+	 song #65 is                   Won't_Get_Fooled_Again
+	 song #66 is                               Wonderwall
+	 song #67 is                            Wrecking_Ball
+	 song #68 is                                Yesterday
+	 song #69 is                       You_Belong_with_Me
+	 song #70 is          You've_Lost_That_Lovin'_Feelin'
+Singer is             Kat, with 27 songs.
+	 song # 0 is                             American_Pie
+	 song # 1 is                         Back_to_December
+	 song # 2 is                          Bad_moon_rising
+	 song # 3 is                                Barracuda
+	 song # 4 is                              Billie_Jean
+	 song # 5 is                        Bohemian_Rhapsody
+	 song # 6 is                                  Crazier
+	 song # 7 is                                    Crazy
+	 song # 8 is                    Every_Breath_You_Take
+	 song # 9 is                                Eyes_Open
+	 song #10 is                            Gin_and_Juice
+	 song #11 is                             Heart_Attack
+	 song #12 is                         Here_Without_You
+	 song #13 is                         Hotel_California
+	 song #14 is                   I_Will_Always_Love_You
+	 song #15 is                        Independent_Women
+	 song #16 is                     Like_a_Rolling_Stone
+	 song #17 is                             Live_Forever
+	 song #18 is                           Margaritaville
+	 song #19 is                              Mr._Sandman
+	 song #20 is                                    Rehab
+	 song #21 is                        Since_U_Been_Gone
+	 song #22 is                                    Slide
+	 song #23 is                       Stairway_to_Heaven
+	 song #24 is                                 Survivor
+	 song #25 is                      Teach_Your_Children
+	 song #26 is                                     YOLO
+Singer is            Alex, with 17 songs.
+	 song # 0 is                                Apologize
+	 song # 1 is                                    Crazy
+	 song # 2 is                   Dancing_In_The_Streets
+	 song # 3 is                Hit_Me_Baby_One_More_Time
+	 song # 4 is                  House_Of_The_Rising_Sun
+	 song # 5 is                 I_Just_Died_in_Your_Arms
+	 song # 6 is                    I_Say_a_Little_Prayer
+	 song # 7 is                               Love_Story
+	 song # 8 is                           Margaritaville
+	 song # 9 is                       New_York,_New_York
+	 song #10 is                                    Rehab
+	 song #11 is                                     Sail
+	 song #12 is                                   Smooth
+	 song #13 is                               Sparks_Fly
+	 song #14 is                            Twist_&_Shout
+	 song #15 is                     What's_My_Age_Again?
+	 song #16 is                           Zoot_Suit_Riot
+Singer is            Jane, with 39 songs.
+	 song # 0 is            (I_Can't_Get_No)_Satisfaction
+	 song # 1 is                              99_Problems
+	 song # 2 is                            Another_Night
+	 song # 3 is               Can't_Take_My_Eyes_Off_You
+	 song # 4 is                                    Celia
+	 song # 5 is                           Chantilly_Lace
+	 song # 6 is                           Circle_of_Life
+	 song # 7 is                   Dancing_In_The_Streets
+	 song # 8 is                                 Diamonds
+	 song # 9 is            Everybody_(Backstreet's_Back)
+	 song #10 is                          Fight_the_Power
+	 song #11 is                                 Hey_Jude
+	 song #12 is                Hit_Me_Baby_One_More_Time
+	 song #13 is                   Holding_Out_For_A_Hero
+	 song #14 is          I_Can't_Go_for_That_(No_Can_Do)
+	 song #15 is                    I_Feel_The_Earth_Move
+	 song #16 is                                 Insomnia
+	 song #17 is                          Johnny_B._Goode
+	 song #18 is                               La_Tortura
+	 song #19 is                   Leaving_On_A_Jet_Plane
+	 song #20 is                               Love_Story
+	 song #21 is                                     Mean
+	 song #22 is                        Moves_Like_Jagger
+	 song #23 is                       New_York,_New_York
+	 song #24 is                         Over_the_Rainbow
+	 song #25 is                           Pinball_Wizard
+	 song #26 is                         Return_To_Sender
+	 song #27 is                  Smells_Like_Teen_Spirit
+	 song #28 is                                   Smooth
+	 song #29 is                               Sparks_Fly
+	 song #30 is                                  The_Way
+	 song #31 is                       Truly_Madly_Deeply
+	 song #32 is                               Twenty_Two
+	 song #33 is                                    Vogue
+	 song #34 is                            Walk_This_Way
+	 song #35 is                     What's_My_Age_Again?
+	 song #36 is                           When_Doves_Cry
+	 song #37 is              You_Shook_Me_All_Night_Long
+	 song #38 is                           Zoot_Suit_Riot
+Singer is            Mike, with 21 songs.
+	 song # 0 is                              99_Problems
+	 song # 1 is                            Another_Night
+	 song # 2 is                                  Breathe
+	 song # 3 is                                  Delilah
+	 song # 4 is                      Hanging_by_a_Moment
+	 song # 5 is                   Holding_Out_For_A_Hero
+	 song # 6 is                     I_Love_Rock_and_Roll
+	 song # 7 is                           I_Will_Survive
+	 song # 8 is                Knocking_On_Heaven's_Door
+	 song # 9 is                               La_Tortura
+	 song #10 is                   Leaving_On_A_Jet_Plane
+	 song #11 is                      My_Heart_Will_Go_On
+	 song #12 is                  Smells_Like_Teen_Spirit
+	 song #13 is                        Stand_by_Your_Man
+	 song #14 is                      Tell_It_To_My_Heart
+	 song #15 is               Total_Eclipse_of_the_Heart
+	 song #16 is                                    Toxic
+	 song #17 is                          What's_Going_On
+	 song #18 is                     You_Are_So_Beautiful
+	 song #19 is              You_Shook_Me_All_Night_Long
+	 song #20 is                     You're_Gonna_Miss_Me
+Singer is        Kathleen, with 22 songs.
+	 song # 0 is                Another_Brick_in_the_Wall
+	 song # 1 is                  Carry_On_My_Wayward_Son
+	 song # 2 is                            Crazy_In_Love
+	 song # 3 is                                    Creep
+	 song # 4 is                            Enter_Sandman
+	 song # 5 is                                Free_Bird
+	 song # 6 is                            Gangnam_Style
+	 song # 7 is                      I_Believe_I_Can_Fly
+	 song # 8 is                       I_Want_It_That_Way
+	 song # 9 is                            In_the_Ghetto
+	 song #10 is                                     Iris
+	 song #11 is                                Long_Live
+	 song #12 is                       Losing_My_Religion
+	 song #13 is                            Never_My_Love
+	 song #14 is                    Pour_Some_Sugar_on_Me
+	 song #15 is                              Radioactive
+	 song #16 is                    Right_Here,_Right_Now
+	 song #17 is                        Song_Of_The_South
+	 song #18 is                               The_Breaks
+	 song #19 is                          The_Story_of_Us
+	 song #20 is                               Waterfalls
+	 song #21 is                    Wind_Beneath_My_Wings
+Singer is            Mary, with 12 songs.
+	 song # 0 is                  Baby_I_Need_Your_Loving
+	 song # 1 is                              Don't_Speak
+	 song # 2 is                      Hooked_On_A_Feeling
+	 song # 3 is                            Lose_Yourself
+	 song # 4 is                            Mrs._Robinson
+	 song # 5 is                                      One
+	 song # 6 is                                Our_House
+	 song # 7 is                      Sweet_Child_o'_Mine
+	 song # 8 is                                  The_Fox
+	 song # 9 is                              The_Message
+	 song #10 is                         To_Sir_With_Love
+	 song #11 is                            Under_the_Sea
+Singer is         Rebecca, with 40 songs.
+	 song # 0 is         (Sittin'_On)_The_Dock_of_the_Bay
+	 song # 1 is                           99_Luftballons
+	 song # 2 is          All_I_Want_For_Christmas_Is_You
+	 song # 3 is                            Baby_Got_Back
+	 song # 4 is                            Back_in_Black
+	 song # 5 is               Bridge_over_Troubled_Water
+	 song # 6 is                       Candle_In_The_Wind
+	 song # 7 is                                 Carry_On
+	 song # 8 is                          Dock_Of_The_Bay
+	 song # 9 is                                Free_Bird
+	 song #10 is                        Genie_In_A_Bottle
+	 song #11 is                  I_Dig_Rock_&_Roll_Music
+	 song #12 is                  I_Knew_You_Were_Trouble
+	 song #13 is                I_Saw_Mommy_Kissing_Santa
+	 song #14 is                                  Imagine
+	 song #15 is                      Let's_Stay_Together
+	 song #16 is                     Livin_'_La_Vida_Loca
+	 song #17 is                                     Mine
+	 song #18 is             Music_Sounds_Better_with_You
+	 song #19 is                               My_Name_Is
+	 song #20 is                            One_More_Time
+	 song #21 is                          One_Tin_Soldier
+	 song #22 is                                 Paranoid
+	 song #23 is                            Que_Sera_Sera
+	 song #24 is                       Rhythm_of_the_Rain
+	 song #25 is                                   Royals
+	 song #26 is                             Safe_&_Sound
+	 song #27 is                               Some_Night
+	 song #28 is                              Stand_by_Me
+	 song #29 is                             Superstition
+	 song #30 is                       Sweet_Home_Alabama
+	 song #31 is                              Teen_Spirit
+	 song #32 is                   This_Land_Is_Your_Land
+	 song #33 is                      Tie_A_Yellow_Ribbon
+	 song #34 is                      Under_The_Boardwalk
+	 song #35 is                     We_Are_the_Champions
+	 song #36 is                              White_Horse
+	 song #37 is                         Whole_Lotta_Love
+	 song #38 is                               Wonderwall
+	 song #39 is                                Yesterday
+Singer is        Jennifer, with 24 songs.
+	 song # 0 is                                 Applause
+	 song # 1 is                            Beautiful_Day
+	 song # 2 is                              Born_to_Run
+	 song # 3 is                                 Fearless
+	 song # 4 is                                  Fifteen
+	 song # 5 is                                Get_Lucky
+	 song # 6 is                      Great_Balls_Of_Fire
+	 song # 7 is               I'll_Make_a_Man_out_of_You
+	 song # 8 is                         It's_Raining_Men
+	 song # 9 is                       Livin'_on_a_Prayer
+	 song #10 is                                     Lucy
+	 song #11 is                                     Maps
+	 song #12 is                     Nothing_Compares_2_U
+	 song #13 is                              Purple_Haze
+	 song #14 is                                  Respect
+	 song #15 is                   Some_Kind_Of_Wonderful
+	 song #16 is                        Strawberry_Fields
+	 song #17 is                         Sultans_of_Swing
+	 song #18 is                    Welcome_to_the_Jungle
+	 song #19 is                             What'd_I_Say
+	 song #20 is       With_A_Little_Help_From_My_Friends
+	 song #21 is                   Won't_Get_Fooled_Again
+	 song #22 is                       You_Belong_with_Me
+	 song #23 is          You've_Lost_That_Lovin'_Feelin'
+1800 - Sean arrives
+1800 - Kat arrives
+1800 - Laurel arrives
+1805
+1810
+1815
+1820 - Danielle arrives
+1825
+1830 - Kat leaves
+1835
+1840
+1845 - Jennifer arrives
+1845 - Rebecca arrives
+1845 - Kathleen arrives
+1850
+1855
+1900
+1905
+1910
+1915
+1920
+1925 - Jennifer leaves
+1930
+1935
+1940
+1945 - Kat arrives
+1950
+1955
+2000
+2005
+2010
+2015 - Alex arrives
+2020
+2025 - Jane arrives
+2025 - Alex leaves
+2030
+2035
+2040
+2045
+2050
+2055
+2100
+2105
+2110
+2115
+2120 - Rebecca leaves
+2120 - Kathleen leaves
+2120 - Mike arrives
+2125
+2130
+2135
+2140
+2145
+2150 - Jane leaves
+2155
+2200
+2205
+2210
+2215
+2220
+2225
