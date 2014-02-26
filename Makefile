@@ -1,7 +1,7 @@
 #
 # File:   Makefile
-# Author: Katherine Gibson (gibsonk@cis)
-# Desc:   Makefile for Spring 2014 CIS 190 HW 2
+# Author: Wesley Zhao
+# Desc:   Makefile for Spring 2014 CIS 190 HW 4B
 #
 
 # It is important that your makefile not have extra
@@ -25,12 +25,13 @@ all: karaoke hw link
 # rules to compile the individual .o files
 karaoke:
 	gcc -c -Wall karaoke.c
+	gcc -c -Wall linkedList.c
 hw:
-	gcc -c -Wall hw4a.c
+	gcc -c -Wall hw4b.c
 
 # rule to link the .o files into 'hw2' executable
 link:
-	gcc karaoke.o hw4a.o -o hw4a
+	gcc linkedList.o karaoke.o hw4b.o -o hw4b
 
 
 
@@ -40,7 +41,7 @@ link:
 
 # removes .o and executable files
 clean:
-	rm  -f karaoke.o hw4a.o hw4a
+	rm  -f linkedList.o karaoke.o hw4b.o hw4b
 
 # removes any temporary (~) files
 cleaner: 

@@ -33,10 +33,15 @@ typedef struct event
 { 
   int eventTime;
   char singerName[SINGER_NAME_SIZE]; 
-  char eventAction[EVENT_ACTION_SIZE];
+  /*
+    eventAction is limited to the following:
+    ENTER
+    EXIT
+   */
+  char eventAction[EVENT_ACTION_SIZE]; 
 } EVENT;
 
-void processStuff(char *singerFileLoc, char *eventsFileLoc);
+void processStuff(char *singerFileLoc, char *eventsFileLoc, char *seedNumStr);
 void loadSingers(char *singersFileLoc);
 void printStuff();
 void printEvent(EVENT event);

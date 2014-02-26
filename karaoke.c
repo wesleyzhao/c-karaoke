@@ -6,20 +6,31 @@
  */
 
 #include "karaoke.h"
+#include "linkedList.h"
 
 #define START_TIME 1800
-#define END_TIME 2230
+#define END_TIME 2330
 #define TIME_INCREMENT 5
+#define TOTAL_INCREMENT_POSSIBLE 67
 
-SINGER singers[NUMBER_OF_SINGERS];
 EVENT *events;
+SINGER tempSinger;
+NODEPTR possibleSingersHead;
+NODEPTR rotationSingersHead;
+NODEPTR curSingerPtr;
+
+char **songsSung[TOTAL_INCREMENT_POSSIBLE][TITLE_SIZE+1];
+int seedNum;
+int curSongIndex=0;
 
 int singersNum;
 /************************/
 /* function definitions */
 /************************/
-void processStuff(char *singersFileLoc, char *eventsFileLoc){
-  FILE * eventsReader = fopen(eventsFileLoc, "r");
+void processStuff(char *singersFileLoc, char *eventsFileLoc, char *seedNumStr){
+  seedNum = strtol(seedNumStr, (char **)NULL, 10);
+  srand(seedNum);
+
   loadSingers(singersFileLoc);
   loadEvents(eventsFileLoc);
   printStuff();
@@ -27,32 +38,105 @@ void processStuff(char *singersFileLoc, char *eventsFileLoc){
 
 void printStuff(){
   /* print Singers */
-  int singersIndex = 0;
-  for(singersIndex=0;singersIndex<singersNum;singersIndex++){
-    printSinger(singers[singersIndex]);
-  }
-
 
   /* print Events */
   int curTime;
   int eventsIndex = 0;
-  for(curTime=START_TIME;curTime<=END_TIME;curTime+=TIME_INCREMENT){
-    printf("current time: %d\n", curTime);
+  for(curTime=START_TIME;curTime<END_TIME;curTime=IncrementTime(curTime)){
     EVENT tempEvent = events[eventsIndex];
     while(tempEvent.eventTime == curTime){
+      processEvent(tempEvent);
+
       printEvent(tempEvent);
       eventsIndex++;
       tempEvent = events[eventsIndex];
     }
+    makeSing(curTime);
     
   }
 }
 
+int IncrementTime(int time)
+{
+  /* increment time by five minutes */
+  time += 5;
+
+  /* if minutes are now 60 */
+  if ((time % 100) == 60)
+    {
+      /* reset minutes to 0 and increment hour */
+      time += 40;
+    }
+  return time;
+}
+
+void makeSing(eventTime){
+  SINGER singer;
+  SONG song;
+  int randomNum;
+  int songSung;
+
+  if (rotationSingersHead != NULL){
+    if (curSingerPtr == NULL){
+      curSingerPtr = rotationSingersHead;
+    }
+    singer = curSingerPtr -> data;
+    songSung = 1;
+    int i;
+    while(songSung == 1){
+      songSung = 0;
+      randomNum = getRandomNum(singer.numSongs);
+      song = (singer.songs)[randomNum];
+
+      for(i=0; i<TOTAL_INCREMENT_POSSIBLE; i++){
+	if(strcmp(songsSung[i],song.title) == 0){
+	  songSung = 1;
+	}
+      }
+    }
+
+    song.sung = 1;
+    strcpy(songsSung[curSongIndex], song.title);
+    curSongIndex+=1;
+    
+    printf("%d - %s sings \"%s\"\n", eventTime, singer.name, song.title);
+    /*
+    fprintf(stderr, "press anykey to conitnue\n");
+    getchar(); 
+    */
+    rotateSingers();
+  }
+}
+
+void processEvent(EVENT event){
+  if (strcmp(event.eventAction, "ENTER") == 0){
+    addSingerToRotation(event.singerName);
+  }
+  else if (strcmp(event.eventAction, "EXIT") == 0){
+    removeSingerFromRotation(event.singerName);
+  }
+}
+
+void addSingerToRotation(char *singerName){
+  NODEPTR singerNode;
+  singerNode = FindNode(&possibleSingersHead, singerName);
+  Move(singerNode, &possibleSingersHead, &rotationSingersHead);
+}
+
+void removeSingerFromRotation(char *singerName){
+  NODEPTR singerNode;
+  singerNode = FindNode(&rotationSingersHead, singerName);
+  if (singerNode != NULL){
+    Move(singerNode, &rotationSingersHead, &possibleSingersHead);
+  }
+}
+
+void rotateSingers(){
+  curSingerPtr = curSingerPtr->next;
+}
+
 void printEvent(EVENT event){
-  printf("EVENT!\n");
-  printf("time: %d\n", event.eventTime);
-  printf("singer name: %s\n", event.singerName);
-  printf("action: %s\n", event.eventAction);
+  printf("%d - %s %s\n", event.eventTime, event.singerName, event.eventAction);
 }
 
 void printSinger(SINGER singer){
@@ -82,9 +166,8 @@ void loadSingers(char *singersFileLoc){
 
   while (fscanf(singersReader, "%s", line) != EOF)
     {
-      SINGER *tempSinger = &(singers[curSingerIndex]);
       if (isLineSinger){
-	strcpy(tempSinger->name, line);	
+	strcpy(tempSinger.name, line);	
 	
 	isLineSinger = 0;
 	curSongNum = 0;
@@ -94,17 +177,25 @@ void loadSingers(char *singersFileLoc){
 	curSongTotal = strtol(line, (char **)NULL, 10);
 	curSongNum = 1;
 	
-	tempSinger->numSongs = curSongTotal;
-	tempSinger->songs = (SONG *) malloc(curSongTotal*sizeof(SONG));
+	tempSinger.numSongs = curSongTotal;
+	tempSinger.songs = (SONG *) malloc(curSongTotal*sizeof(SONG));
       }
       else if (curSongNum <= curSongTotal){
-	SONG *tempSong = &(tempSinger->songs[curSongNum-1]);
-	strcpy(tempSong->singer, tempSinger->name);
+	SONG *tempSong = &((tempSinger.songs)[curSongNum-1]);
+	strcpy(tempSong->singer, tempSinger.name);
 	strcpy(tempSong->title,line);
 	tempSong->sung = 0;
 	if (curSongNum == curSongTotal){
 	  /* we are on the last song for the singer  */
 	  /* the next line will be another singer */
+
+	  /* first create the node for the linked list */
+	  NODEPTR tempNode;
+	  tempNode = CreateNode();
+	  SetData(tempNode, tempSinger);
+	  Insert(&possibleSingersHead, tempNode);
+
+	  /* reset loop */
 	  isLineSinger = 1;
 	  curSongTotal = 0;
 	  curSongNum = 0;
@@ -124,11 +215,6 @@ void loadSingers(char *singersFileLoc){
 void loadEvents(char *eventsFileLoc){
   FILE * eventsReader = fopen(eventsFileLoc, "r");
   char line[80];
-  
-  int curSingerIndex = 0;
-  int curSongNum = 0;
-  int curSongTotal = 0;
-  int isLineSinger = 1;
   
   int eventsTotal;
   int curEventIndex = 0;
@@ -165,4 +251,14 @@ void loadEvents(char *eventsFileLoc){
       }
     }/* end while loop */
   fclose(eventsReader);  
+}
+
+int getRandomNum(int rangeNum){
+  /* 
+     will return a random number seeded by seedNum
+     anywhere from 0 through rangeNum-1
+     if rangeNum is 100
+     will be anyhere from 0 to 99
+   */
+  return rand() % rangeNum;
 }

@@ -50,6 +50,3 @@ ENTER
 2150
 Jane
 EXIT
-2215
-Kat
-EXIT
